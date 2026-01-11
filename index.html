@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Chart Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Trading Chart Analyzer</h1>
+</header>
+
+<main>
+  <section class="upload-section">
+    <h2>Upload your chart screenshot</h2>
+    <input type="file" id="chartUpload" accept="image/*">
+    <button id="analyzeBtn">Analyze</button>
+  </section>
+
+  <section class="result-section">
+    <h2>Analysis Results</h2>
+    <canvas id="chartCanvas"></canvas>
+    <div id="summary"></div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Trading Chart Analyzer</p>
+</footer>
+
+<script src="opencv.js"></script> <!-- OpenCV library -->
+<script src="script.js"></script>
+</body>
+</html>
